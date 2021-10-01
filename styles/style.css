@@ -1,3 +1,4 @@
+/* General configs */
 * {
   margin: 0;
   padding: 0;
@@ -25,9 +26,10 @@ body a{
 
 .logo {
   margin: 2.3rem 0 1.5rem;
-  font: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .flex{
@@ -35,6 +37,27 @@ body a{
   justify-content: center;
   align-items: center;
 }
+
+.button{
+  background-color: #D6000D;
+  
+  display: block;
+  width: 4rem;
+  padding: 0.625rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  
+  transition: 500ms;
+}
+
+.button:hover{
+  background-color:#c72732;
+  transform: translateY(-2px);
+}
+
+/* Nav section */
 
 nav ul.flex {
   list-style: none;
@@ -44,26 +67,6 @@ nav ul.flex {
 
 nav ul li a:hover{
   color: rgb(75, 69, 69);
-  transform: translateY(-2rem);
-}
-
-.button{
-  background-color: #D6000D;
-
-  display: block;
-  width: 4rem;
-  padding: 0.625rem;
-  border-radius: 0.3rem;
-  color: white;
-  font-weight: 700;
-  text-align: center;
-
-  transition: 500ms;
-}
-
-.button:hover{
-  background-color:#db505a;
-  transform: translateY(-2px);
 }
 
 /*-- Main Section --*/
@@ -99,7 +102,7 @@ section#main .button{
 
 /* Contact section */
 section#contact {
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 section#contact.flex{
   flex-direction: column;
@@ -107,12 +110,21 @@ section#contact.flex{
 
 section#contact img{
   margin: 2rem;
-  width: 60%;
+  width: 50%;
+}
+
+section#contact ul{
+  margin-bottom: 1rem;
 }
 
 section#contact ul li{
   list-style: none;
-  margin: 1rem 0;
+  margin: 0.3rem 0 1.75rem;
+}
+
+i.fa-check-circle{
+  color: #D6000D;
+  margin-right: 0.8rem;
 }
 
 section#contact #contact-number.flex{
@@ -134,38 +146,42 @@ section#contact .button{
   width: 12rem;
   padding: 1rem;
   border-radius: 0.7rem;
+  font-weight: 700;
 }
 
-/* Testimonails section */
+/* Testimonials section */
 
 section#testimonials .cards{
   justify-content: space-evenly;
   background-color: rgb(223, 217, 217);
   margin: 2.5rem 0;
   height: auto;
-  padding: 0.8rem;
+  padding: 1.5rem 0 1rem;
   border-radius: 1rem;
 }
 
 section#testimonials .photo-user{
-  width: 5rem;
-  height: 5rem;
+  align-self: baseline;
+  width: 4.2rem;
+  height: 4rem;
   background-color: #D6000D;
   border-radius: 50%;
 }
 
-section#testimonials .nome{
+section#testimonials div.testimonial{
+  width: 60%;
+  height: auto;
+}
+
+section#testimonials div.testimonial p.nome{
   font-size: 1.5rem;
-  margin-top: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
 }
 
 section#testimonials .empresa{
   font-size: 1rem;
   font-weight: 500;
-}
-
-section#testimonials .testimonial{
-  width: 50%;
 }
 
 /* Footer section */
@@ -176,14 +192,49 @@ footer{
   padding: 0.5rem 0rem 2rem;
 }
 
+footer div.container{
+  margin: 2rem 2.3rem 0;
+}
+
 footer header .logo{
-  margin: 0;
+  margin: 1rem 0 0.1rem;
 }
 
 footer header p{
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-footer h3{
-  margin-top: 1.5rem;
+footer div.container a{
+  color: white;
+  text-decoration: underline;
+}
+
+footer div.container p{
+  font-weight: 400;
+}
+
+footer div.container h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+footer div.container #about h3, #contact h3, #social-medias h3{
+  margin: 0.6rem 0;
+}
+
+footer #contact{
+  margin: 1rem 0;
+}
+
+footer #contact p{
+  margin: 1rem 0;
+}
+
+
+i.fab{
+  color: #D6000D;
+  font-size: 2.3rem;
+  margin-right: 2.1rem;
 }
