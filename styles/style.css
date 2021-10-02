@@ -29,7 +29,7 @@ body a{
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .flex{
@@ -69,6 +69,10 @@ nav ul li a:hover{
   color: rgb(75, 69, 69);
 }
 
+h1.logo{
+  font-style: italic;
+}
+
 /*-- Main Section --*/
 
 section#main{
@@ -77,8 +81,8 @@ section#main{
 }
 
 section#main img{
-  width: 80%;
   display: block;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -87,8 +91,8 @@ section#main h3{
 }
 
 section#main #subtitle{
-  display: block;
   font-size: 2rem;
+  display: block;
 }
 
 section#main .button{
@@ -101,23 +105,24 @@ section#main .button{
 }
 
 /* Contact section */
-section#contact {
+section#services {
   margin: 5rem 0;
 }
-section#contact.flex{
+
+section#services #services-itens.flex{
   flex-direction: column;
 }
 
-section#contact img{
+section#services img{
   margin: 2rem;
   width: 50%;
 }
 
-section#contact ul{
+section#services ul{
   margin-bottom: 1rem;
 }
 
-section#contact ul li{
+section#services ul li{
   list-style: none;
   margin: 0.3rem 0 1.75rem;
 }
@@ -127,11 +132,11 @@ i.fa-check-circle{
   margin-right: 0.8rem;
 }
 
-section#contact #contact-number.flex{
+section#services #contact-number.flex{
   flex-direction: column;
 }
 
-section#contact #number-input{
+section#services #number-input{
   margin: 1rem 0 0.7rem;
   background-color: rgb(223, 217, 217);
   box-sizing: border-box;
@@ -142,7 +147,7 @@ section#contact #number-input{
   border-radius: 0.7rem;
 }
 
-section#contact .button{
+section#services .button{
   width: 12rem;
   padding: 1rem;
   border-radius: 0.7rem;
@@ -189,15 +194,19 @@ section#testimonials .empresa{
 footer{
   background-color: black;
   color: white;
-  padding: 0.5rem 0rem 2rem;
+  padding: 0.5rem 0rem 1rem;
 }
 
-footer div.container{
+footer section.container{
   margin: 2rem 2.3rem 0;
 }
 
-footer header .logo{
-  margin: 1rem 0 0.1rem;
+footer header{
+  margin: 2rem 0;
+}
+
+footer header h1.logo{
+  margin: 0 0.1rem;
 }
 
 footer header p{
@@ -206,35 +215,34 @@ footer header p{
   font-weight: 400;
 }
 
-footer div.container a{
+footer section.container a{
   color: white;
   text-decoration: underline;
 }
 
-footer div.container p{
+footer section.container p{
   font-weight: 400;
 }
 
-footer div.container h3{
+footer section.container h3{
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-footer div.container #about h3, #contact h3, #social-medias h3{
+footer section.container #about h3, #contact h3, #social-medias h3{
   margin: 0.6rem 0;
 }
 
-footer #contact{
-  margin: 1rem 0;
+footer #contact, #about, #social-medias{
+  margin: 1.3rem 0;
 }
 
 footer #contact p{
   margin: 1rem 0;
 }
 
-
 i.fab{
   color: #D6000D;
-  font-size: 2.3rem;
-  margin-right: 2.1rem;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
 }

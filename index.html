@@ -5,7 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codar</title>
+
+  <!--Link css -->
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
+  <!-- Link fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -15,28 +20,33 @@
     <h1 class="logo"><span class="red">Codar</span>.</h1>
     <nav id="main">
       <ul class="flex">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#main">Início</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a href="#" class="button none">Login</a></li>
       </ul>
     </nav>
   </header>
   <main class="container">
     <section id="main">
       <img src="./assets/video_call.png" alt="photo with people in video call">
-      <h3>Alavanque seu negócio com um <span class="red" id="subtitle">Website incrível</span></h3>
-      <a href="#" class="button">Solicitar orçamento</a>
+      <div id="info">
+        <h3>Alavanque seu negócio com um<span class="red" id="subtitle">Website incrível</span></h3>
+        <a href="#" class="button">Solicitar orçamento</a>
+      </div>
     </section>
-    <section id="contact" class="flex">
-      <img src="./assets/coding_.png" alt="">
-      <ul>
-        <li><i class="fas fa-check-circle"></i>Domínio personalizado</li>
-        <li><i class="fas fa-check-circle"></i>Hospedagem</li>
-        <li><i class="fas fa-check-circle"></i>Site responsivo</li>
-        <li><i class="fas fa-check-circle"></i>Redes sociais</li>
-        <li><i class="fas fa-check-circle"></i>Chat online</li>
-        <li><i class="fas fa-check-circle"></i>Blog integrado</li>
-      </ul>
+    <section id="services" >
+      <div id="services-itens" class="flex">
+        <img src="./assets/coding_.png" alt="">
+        <ul>
+          <li><i class="fas fa-check-circle"></i>Domínio personalizado</li>
+          <li><i class="fas fa-check-circle"></i>Hospedagem</li>
+          <li><i class="fas fa-check-circle"></i>Site responsivo</li>
+          <li><i class="fas fa-check-circle"></i>Redes sociais</li>
+          <li><i class="fas fa-check-circle"></i>Chat online</li>
+          <li><i class="fas fa-check-circle"></i>Blog integrado</li>
+        </ul>
+      </div>
       <form action="#" id="contact-number" class="flex">
         <caption>Nossa equipe está à disposição!</caption>
         <label for="name"></label>
@@ -64,11 +74,11 @@
     </section>
   </main>
   <footer>
-    <header>
-      <h1 class="logo">Codar.</h1>
-      <p>Criamos websites incríveis</p>
-    </header>
-    <div class="container">
+    <section class="container">
+      <header>
+        <h1 class="logo">Codar.</h1>
+        <p>Criamos websites incríveis</p>
+      </header>
       <div id="about">
         <h3>Sobre</h3>
         <p>Amamos criar soluções</p>
@@ -82,11 +92,11 @@
       </div>
       <div id="social-medias">
         <h3>Redes sociais</h3>
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
       </div>
-    </div>
+    </section>
   </footer>
 
   <!-- Icons -->
