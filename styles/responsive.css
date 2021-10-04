@@ -140,6 +140,11 @@
     justify-content: space-evenly;
   }
 
+  section#services #itens-contact{
+    display: block;
+  }
+  
+
   section#services div#itens-contact{
     margin-top: 12rem;
   }
