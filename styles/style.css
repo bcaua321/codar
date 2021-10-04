@@ -113,12 +113,16 @@ section#services #services-itens.flex{
   flex-direction: column;
 }
 
+section#services #itens-contact{
+  flex-direction: column;
+}
+
 section#services img{
   width: 50%;
 }
 
 section#services ul{
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 }
 
 section#services ul li{
@@ -133,6 +137,7 @@ i.fa-check-circle{
 
 section#services #contact-number.flex{
   flex-direction: column;
+  justify-content: center;
 }
 
 section#services #number-input{

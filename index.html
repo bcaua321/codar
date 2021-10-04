@@ -27,35 +27,38 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <section id="main">
+  <main>
+    <section id="main" class="container">
       <img src="./assets/video_call.png" alt="photo with people in video call">
       <div id="info">
         <h3>Alavanque seu negócio com um<span class="red" id="subtitle">Website incrível</span></h3>
         <a href="#" class="button">Solicitar orçamento</a>
       </div>
     </section>
-    <section id="services" >
-      <div id="services-itens" class="flex">
+    <section id="services" class="container">
+      <div id="services-itens" class="flex" >
         <img src="./assets/coding_.png" alt="">
-        <ul>
-          <li><i class="fas fa-check-circle"></i>Domínio personalizado</li>
-          <li><i class="fas fa-check-circle"></i>Hospedagem</li>
-          <li><i class="fas fa-check-circle"></i>Site responsivo</li>
-          <li><i class="fas fa-check-circle"></i>Redes sociais</li>
-          <li><i class="fas fa-check-circle"></i>Chat online</li>
-          <li><i class="fas fa-check-circle"></i>Blog integrado</li>
-        </ul>
+        <div id="itens-contact" class="flex">
+          <ul>
+            <li><i class="fas fa-check-circle"></i>Domínio personalizado</li>
+            <li><i class="fas fa-check-circle"></i>Hospedagem</li>
+            <li><i class="fas fa-check-circle"></i>Site responsivo</li>
+            <li><i class="fas fa-check-circle"></i>Redes sociais</li>
+            <li><i class="fas fa-check-circle"></i>Chat online</li>
+            <li><i class="fas fa-check-circle"></i>Blog integrado</li>
+          </ul>
+          <form action="#" id="contact-number" class="flex">
+            <caption class="titulo">Nossa equipe está à disposição!</caption>
+            <label for="name">
+              <input type="number" id="number-input" placeholder="Celular">
+              <a href="#" class="button">Ligamos para você</a>
+            </label>
+          </form>
+        </div>
       </div>
-      <form action="#" id="contact-number" class="flex">
-        <caption class="titulo">Nossa equipe está à disposição!</caption>
-        <label for="name">
-          <input type="number" id="number-input" placeholder="Celular">
-          <a href="#" class="button">Ligamos para você</a>
-        </label>
-      </form>
+
     </section>
-    <section id="testimonials">
+    <section id="testimonials" class="container">
       <div class="cards flex">
         <div class="photo-user"></div>
         <div class="testimonial">

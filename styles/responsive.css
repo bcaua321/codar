@@ -140,20 +140,21 @@
     justify-content: space-evenly;
   }
 
+  section#services div#itens-contact{
+    margin-top: 12rem;
+  }
+
   section#services ul{
-    width: 35%;
+    width: 50%;
   }
 
   section#services ul li{
     margin: 1rem 0;
   }
 
-  section#services #contact-number{
-    margin-left: 7.7rem;
-  }
-
   section#services #contact-number.flex{
     display: block;
+    margin-top: 3.5rem;
   }
 
   section#services #contact-number label{
@@ -162,14 +163,12 @@
   
   section#services #contact-number a.button{
     box-sizing: border-box;
-    margin: 0;
     display: inline-block;
     width: 13rem;
     padding: 0.8rem;
   }
 
   section#services #number-input{
-    margin: 0;
     box-sizing: border-box;
     display: inline-block;
     width: 13rem;
@@ -181,6 +180,7 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
+    margin-top: 11rem;
   }
 
   section#testimonials .cards{
